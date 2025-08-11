@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Code & Grow</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./assets/images/logo-removebg-preview.png" alt="logo" />
+      </div>
+
+      <h2>Code & Grow</h2>
+      <span class="slogan">Tổng hợp kiến thức và dự án</span>
+      <!-- Search -->
+      <form class="search-form" role="search">
+        <button type="submit">🔍</button>
+        <input type="search" placeholder="Tìm kiếm..." />
+      </form>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main class="layout">
+      <!-- Sidebar trái: danh mục -->
+      <aside class="sidebar-left">
+        <nav aria-label="Danh mục kiến thức">
+          <ul>
+            <li class="active"><a href="#">Kiến thức HTML</a></li>
+            <li><a href="#">Kiến thức CSS</a></li>
+            <li><a href="#">Kiến thức Javascript</a></li>
+            <li><a href="#">Dự án cá nhân</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Nội dung bài viết -->
+      <main class="content">
+        <article>
+          <h1>Buổi 1: HTML Cơ Bản</h1>
+          <section id="phan1">
+            <h2>1. HTML là gì? Các thẻ dùng trong HTML</h2>
+            <p>
+              HTML (HyperText Markup Language) là ngôn ngữ đánh dấu được sử dụng
+              để xây dựng cấu trúc và nội dung của trang web. Nó sử dụng các
+              <em>thẻ</em> (tags) để định nghĩa các phần tử như tiêu đề, đoạn
+              văn, hình ảnh, liên kết, bảng,...
+            </p>
+            <p>Một số thẻ HTML cơ bản:</p>
+            <ul>
+              <li><code>&lt;h1&gt;...&lt;/h1&gt;</code> – Tiêu đề lớn</li>
+              <li><code>&lt;p&gt;...&lt;/p&gt;</code> – Đoạn văn</li>
+              <li><code>&lt;a&gt;...&lt;/a&gt;</code> – Liên kết</li>
+              <li><code>&lt;img&gt;</code> – Hình ảnh</li>
+              <li>
+                <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>,
+                <code>&lt;li&gt;</code> – Danh sách
+              </li>
+            </ul>
+          </section>
+
+          <section id="phan2">
+            <h2>2. Semantic trong HTML là gì?</h2>
+            <p>
+              Semantic HTML là việc sử dụng các thẻ mang ý nghĩa rõ ràng về nội
+              dung và mục đích của chúng, giúp cả trình duyệt lẫn con người dễ
+              hiểu hơn. Ví dụ:
+            </p>
+            <ul>
+              <li><code>&lt;header&gt;</code> – Phần đầu trang</li>
+              <li><code>&lt;nav&gt;</code> – Thanh điều hướng</li>
+              <li><code>&lt;main&gt;</code> – Nội dung chính</li>
+              <li><code>&lt;article&gt;</code> – Một bài viết độc lập</li>
+              <li><code>&lt;section&gt;</code> – Một phần nội dung</li>
+              <li><code>&lt;footer&gt;</code> – Chân trang</li>
+            </ul>
+          </section>
+
+          <section id="phan3">
+            <h2>3. Cấu trúc trang Code & Grow với Semantic</h2>
+            <p>
+              Trang <strong>Code & Grow</strong> được xây dựng với các thành
+              phần chính:
+            </p>
+            <ol>
+              <li>
+                <code>&lt;header&gt;</code> – Chứa logo, slogan, và thanh tìm
+                kiếm
+              </li>
+              <li>
+                <code>&lt;aside&gt;</code> (bên trái) – Menu các chuyên mục
+              </li>
+              <li>
+                <code>&lt;main&gt;</code> – Khu vực hiển thị nội dung bài học
+              </li>
+              <li>
+                <code>&lt;aside&gt;</code> (bên phải) – Điều hướng hoặc nội dung
+                phụ
+              </li>
+              <li>
+                <code>&lt;footer&gt;</code> – Thông tin bản quyền và liên hệ
+              </li>
+            </ol>
+          </section>
+        </article>
+      </main>
+
+      <!-- Sidebar phải: mục lục trong bài -->
+      <aside class="sidebar-right">
+        <nav aria-label="Mục lục bài viết">
+          <ul>
+            <li class="active"><a href="#phan1">Phần 1</a></li>
+            <li><a href="#phan2">Phần 2</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Code & Grow. Never Give Up!</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
